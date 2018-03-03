@@ -2,7 +2,7 @@
 I created a Youtube code along tutorial for this project. Click the link above to view!
 
 # react-portfolio-starter
-A React portfolio starter app using create-react-app. Includes top header, side nav with a few pages which are routed with react-router
+A React based personal portfolio app using create-react-app and React Router v4.
 
 # Tools
 * create-react-app cli

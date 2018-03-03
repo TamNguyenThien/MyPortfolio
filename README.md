@@ -1,5 +1,5 @@
 # Youtube created tutorial for this project
-[Link to Youtube tutorial playlist](https://www.youtube.com/playlist?list=PL3KAvm6JMiowqFTXj3oPQkhP7aCgRHFTm)
+[Link to Youtube tutorial playlist](https://www.youtube.com/playlist?list=PL3KAvm6JMiowqFTXj3oPQkhP7aCgRHFTm){:target="_blank"}
 
 # react-portfolio-starter
 A React portfolio starter app using create-react-app. Includes top header, side nav with a few pages which are routed with react-router

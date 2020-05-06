@@ -1,92 +1,131 @@
-import React, { Component } from 'react';
-import { Grid, Cell } from 'react-mdl';
-import Education from './education';
-import Experience from './experience';
-import Skills from './skills';
-
+import React, { Component } from 'react'
+import { Grid, Cell } from 'react-mdl'
+import Education from './education'
+import Skills from './skills'
 
 class Resume extends Component {
-  render() {
-    return(
+  render () {
+    return (
       <div>
         <Grid>
-          <Cell col={4}>
-            <div style={{textAlign: 'center'}}>
+          <Cell col={3}>
+            <div style={{ textAlign: 'center' }}>
               <img
-                src="https://www.shareicon.net/download/2015/09/18/103157_man_512x512.png"
-                alt="avatar"
-                style={{height: '200px'}}
-                 />
+                src='https://scontent.fvca1-1.fna.fbcdn.net/v/t1.0-9/67803466_1091181307740592_3648681628277932032_n.jpg?_nc_cat=108&_nc_ohc=s85wWkkCed8AX8bdRjP&_nc_ht=scontent.fvca1-1.fna&oh=8d3d0ac98be7c1c96959e7a8b996dead&oe=5EB4C6BC'
+                alt='avatar'
+                style={{ height: '200px' }}
+              />
             </div>
 
-            <h2 style={{paddingTop: '2em'}}>Paul Hanna</h2>
-            <h4 style={{color: 'grey'}}>Programmer</h4>
-            <hr style={{borderTop: '3px solid #833fb2', width: '50%'}}/>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-            <hr style={{borderTop: '3px solid #833fb2', width: '50%'}}/>
-            <h5>Address</h5>
-            <p>1 Hacker Way Menlo Park, 94025</p>
-            <h5>Phone</h5>
-            <p>(123) 456-7890</p>
-            <h5>Email</h5>
-            <p>someone@example.com</p>
-            <h5>Web</h5>
-            <p>mywebsite.com</p>
-            <hr style={{borderTop: '3px solid #833fb2', width: '50%'}}/>
+            <h2 style={{ paddingTop: '2em' }}>Nguyễn Thiện Tâm</h2>
+            <h4 style={{ color: 'grey' }}>OBJECTIVE</h4>
+            <hr style={{ borderTop: '3px solid #833fb2', width: '100%' }} />
+            <p>Working in a professional environment and learn from the experience of your colleagues with specialized programmer.
+              So that involve and develop many large projects brings success for the company and achievement for yourself.</p>
+            <hr style={{ borderTop: '3px solid #833fb2', width: '100%' }} />
           </Cell>
-          <Cell className="resume-right-col" col={8}>
+          <Cell className='resume-right-col' col={9}>
             <h2>Education</h2>
-
-
             <Education
-              startYear={2002}
-              endYear={2006}
-              schoolName="My University"
-              schoolDescription="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
-               />
+              startYear={2014}
+              endYear={2018}
+              schoolName='VNUHCM-University of Science'
+              schoolDescription='Trường Đại học Khoa học Tự nhiên, Đại học Quốc gia Thành phố Hồ Chí Minh là một trong những trường đại học đào tạo và nghiên cứu khoa học cơ bản & ứng dụng hàng đầu Việt Nam, trực thuộc Đại học Quốc gia Thành phố Hồ Chí Minh, được xếp vào nhóm trường đại học trọng điểm quốc gia Việt Nam.'
+            />
 
-               <Education
-                 startYear={2007}
-                 endYear={2009}
-                 schoolName="My 2nd University"
-                 schoolDescription="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
-                  />
-                <hr style={{borderTop: '3px solid #e22947'}} />
+            <hr style={{ borderTop: '2px solid #e22947' }} />
 
-              <h2>Experience</h2>
-
-            <Experience
-              startYear={2009}
-              endYear={2012}
-              jobName="First Job"
-              jobDescription="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
-              />
-
-              <Experience
-                startYear={2012}
-                endYear={2016}
-                jobName="Second Job"
-                jobDescription="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
-                />
-              <hr style={{borderTop: '3px solid #e22947'}} />
-              <h2>Skills</h2>
-              <Skills
-                skill="javascript"
-                progress={100}
-                />
-                <Skills
-                  skill="HTML/CSS"
-                  progress={80}
-                  />
-                  <Skills
-                    skill="NodeJS"
-                    progress={50}
-                    />
-                    <Skills
-                      skill="React"
-                      progress={25}
-                      />
-
+            <h2>Experience</h2>
+            <Grid>
+              <Cell col={4} style={{ borderRight: '#000 solid 1px' }}>
+                <p>2018 - 2019</p>
+              </Cell>
+              <Cell col={8}>
+                <h4 style={{ marginTop: '0px' }}>INNOS Ltd</h4>
+                <p>Main responsibilities:</p>
+                <p>
+                - Analyze a project with draw.io, spreadsheets.
+                </p>
+                <p>
+                - Make Wireframe with Pidoco tool.
+                </p>
+                <p>
+                - Design database structure.
+                </p>
+                <p>
+                - Design UI with Figma tool.
+                </p>
+                <p>
+                - Make a smartPharma appplication, elearning app:
+                  <p>
+                  + Database: MongoDB.
+                  </p>
+                  <p>
+                  + Backend: built with NestJs, Apollo GraphQL, TypeORM, MongoDB.
+                  </p>
+                  <p>
+                  + Frontend: built with ReactJs, Mobx, Apollo GraphQL, Ant-design, i18n, Webpack, Cypress.
+                  </p>
+                  <p>
+                  - Demo: ''
+                  </p>
+                </p>
+              </Cell>
+            </Grid>
+            <hr style={{ borderTop: '3px solid #e22947' }} />
+            <h2>INTERESTS</h2>
+            <p>
+              Researching technology
+            </p>
+            <p>
+            Teambuilding
+            </p>
+            <p>
+            Outdoor activities
+            </p>
+            <p>
+            Shopping
+            </p>
+            <p>
+            Traveling
+            </p>
+            <p>
+            Movies
+            </p>
+            <hr style={{ borderTop: '3px solid #e22947' }} />
+            <h2>Skills</h2>
+            <Skills
+              skill='English'
+              progress={50}
+            />
+            <Skills
+              skill='Communication'
+              progress={90}
+            />
+            <Skills
+              skill='Teamwork'
+              progress={90}
+            />
+            <Skills
+              skill='Creativity'
+              progress={90}
+            />
+            <Skills
+              skill='Time management'
+              progress={80}
+            />
+            <Skills
+              skill='Adaptability'
+              progress={90}
+            />
+            <Skills
+              skill='Problem-solving'
+              progress={80}
+            />
+            <Skills
+              skill='Office'
+              progress={80}
+            />
 
           </Cell>
         </Grid>
@@ -95,4 +134,4 @@ class Resume extends Component {
   }
 }
 
-export default Resume;
+export default Resume
